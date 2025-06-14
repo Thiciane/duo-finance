@@ -95,10 +95,10 @@ TEMPLATES = [
     },
     {
         "BACKEND": "django_jinja.jinja2.Jinja2",
-        "DIRS": [os.path.join(BASE_DIR, "financeiro/templates")],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
-            "match_extension": ".j2",
+            "match_extension": ".jinja",
             "globals": {
                 "django_browser_reload_script": "django_browser_reload.jinja.django_browser_reload_script",
                 "debug": DEBUG,
