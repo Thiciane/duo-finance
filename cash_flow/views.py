@@ -20,3 +20,7 @@ def post_cashflow(request: HttpRequest):
     response = HttpResponse()
     response["HX-Redirect"] = ""
     return response
+    
+@view(path='login', name='login')
+def login(request: HttpRequest):
+    return render(request, 'login.html.j2', {"clean": True } )

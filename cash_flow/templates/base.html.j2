@@ -7,11 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<main class="min-h-screen min-w-screen bg-gray-700">
-{% include 'nav.html.j2' %}
+<main class="min-h-screen min-w-screen">
+{% if not clean %}
+    {% include 'components/aside.html.j2' %}
+{% endif %}
 
+<div {% if not clean %}
+ class="p-4 sm:ml-64" {% endif %}> 
 {% block body %}
 
 {% endblock %}
+</div>
+
 </main>
 </body>
