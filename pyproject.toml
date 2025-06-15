@@ -8,4 +8,7 @@ dependencies = [
     "django>=5.2.1",
     "django-browser-reload>=1.18.0",
     "django-jinja>=2.11.0",
+    "pluggy>=1.6.0",
+    "pluggy-sdk>=1.0.0.post44",
+    "requests>=2.32.4",
 ]
