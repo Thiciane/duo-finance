@@ -1,28 +1,40 @@
-{% macro side_item(label='', class='') %}
-<li>
-   <a href="#"
-      class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-      <i class="{{class}}"></i>
-      <span class="ms-3">{{label}}</span>
-   </a>
-</li>
+{% macro item(href='dashboard', label='', class='', active_path='') %}
+  {% set is_active = active_path == url(href) %}
+  <li>
+     <a href="{{ url(href) }}"
+        class="flex items-center py-3 px-6 group          
+              {{ 'border-b-2 border-b-yellow-600 text-gray-900' if is_active else 'text-gray-600 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700' }}">
+
+        <i class="{{class}} text-lg w-5 text-center"></i>
+        <span class="ms-3">{{label}}</span>
+     </a>
+  </li>
 {% endmacro %}
 
 
-<aside id="logo-sidebar"
-   class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
-   aria-label="Sidebar">
-   <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
-      <ul class="space-y-2 font-medium">
-         {{ side_item('Dashboard', 'quyweiuqwyequie') }}
-         {{ side_item('Dashboard', 'quyweiuqwyequie') }}
-         {{ side_item('Dashboard', 'quyweiuqwyequie') }}
+<aside
+  class="fixed top-0 left-0 z-50 w-64 h-screen bg-white border-r border-gray-100
+         dark:bg-gray-800 dark:border-gray-700 transition-transform -translate-x-full sm:translate-x-0"
+  aria-label="Sidebar">
 
-         {{ side_item('Dashboard', 'quyweiuqwyequie') }}
-         {{ side_item('Dashboard', 'quyweiuqwyequie') }}
-         {{ side_item('Dashboard', 'quyweiuqwyequie') }}
-         {{ side_item('Dashboard', 'quyweiuqwyequie') }}
+  <span class="flex justify-center pt-7 pb-6 space-x-2 text-xl text-gray-900 sm:text-2xl dark:text-white">
+    <div class="h-8 w-8 rounded-full gold-gradient flex items-center justify-center">
+      <i class="fa-solid fa-wallet text-transparent bg-clip-text bg-[radial-gradient(at_25%_25%,_#ca8a04,_#fde68a_90%)]"></i>
+    </div>
+    <span class="title">Duo Finance</span>
+  </span>
 
-      </ul>
-   </div>
+  <div class=" h-full overflow-y-auto bg-white dark:bg-gray-800 inline ">
+    <p class="py-4 px-4">menu</p>
+    <ul class="font-medium">
+      {{item(href='dashboard', label='Dashboard', class="fa-regular fa-building", active_path=request.path)}}
+      {{item(href='contas', label='Contas', class="fa-regular fa-folder-closed", active_path=request.path)}}
+      {{item(href='transacoes', label='Transações', class="fa-solid fa-plus", active_path=request.path)}}
+      {{item(href='metas', label='Metas', class="fa-solid fa-chart-line", active_path=request.path)}}
+      {{item(href='relatorios', label='Relatórios', class="fa-solid fa-chart-column", active_path=request.path)}}
+      {{item(href='investimentos', label='Investimentos', class="fa-solid fa-dollar-sign", active_path=request.path)}}
+      {{item(href='alertas', label='Alertas', class="fa-regular fa-bell", active_path=request.path)}}
+      {{item(href='configuracoes', label='Configurações', class="fa-solid fa-sliders", active_path=request.path)}}
+    </ul>
+  </div>
 </aside>

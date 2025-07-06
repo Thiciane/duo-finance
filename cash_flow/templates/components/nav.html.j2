@@ -1,0 +1,43 @@
+<nav class="fixed top-0 z-40 w-full bg-white border-b border-gray-100 dark:bg-gray-800 dark:border-gray-700 pl-64">
+  <div class="px-3 py-3 lg:px-5 lg:pl-3">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center text-center justify-start rtl:justify-end">
+        <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            <span class="sr-only">Open sidebar</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+               <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+            </svg>
+         </button>
+         <span class=" flex flex-col space-y-0.5 items-start whitespace-nowrap text-gray-900 dark:text-white">
+            <span class="title text-xl font-semibold sm:text-2xl">Dashboard</span>
+            <p>Visão geral das suas finanças</p>
+         </span>
+      </div>
+
+      <div class="flex items-center justify-start ">
+      
+        <button class="p-2 rounded text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+        <i class="fa-solid fa-plus p-2"></i>
+        Nova Transação</button>
+
+        <button id="toggleTheme" class="p-2 rounded focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black block dark:hidden" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3
+                     m15.364 6.364l-1.414-1.414
+                     M6.05 6.05L4.636 4.636
+                     m12.728 0l-1.414 1.414
+                     M6.05 17.95l-1.414 1.414
+                     M12 8a4 4 0 100 8 4 4 0 000-8z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white hidden dark:block" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3
+                     a7 7 0 009.79 9.79z" />
+            </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
