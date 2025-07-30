@@ -30,7 +30,7 @@
 </head>
 
 <body>
-<main class="min-h-screen min-w-screen">
+<main class="min-h-screen min-w-screen bg-gray-50">
 {% if not clean %}
     {% include 'components/aside.html.j2' %}
     {% include 'components/nav.html.j2' %}
@@ -39,10 +39,13 @@
 
 <div {% if not clean %}
  class="p-4 sm:ml-64 mt-16" {% endif %}> 
-
-{% block body %}
-
-{% endblock %}
+    {% block nav %}
+    
+    {% endblock %}
+    
+    {% block body %}
+    
+    {% endblock %}
 </div>
 
 </main>

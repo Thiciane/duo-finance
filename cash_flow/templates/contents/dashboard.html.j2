@@ -1,5 +1,223 @@
 {% extends "base.html.j2" %}
 
 {% block body %}
-<h1>dashboard</h1>
+    <div class="mt-4"> 
+        <div class="grid grid-cols-3 gap-3">
+            <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex justify-between">
+                    <p class="title">Conta conjunta</p>
+                    <i class="fa-regular fa-money-bill-1 text-xs rounded-full flex justify-center items-center w-8 h-8 text-purple-400 bg-gradient-to-br from-purple-200 to-purple-100"></i>                
+                </div>
+                <p class="text-2xl mt-3 title">R$</p>
+                <p class="text-gray-600">Nubank Conjunto</p>
+                <p class="mt-4" style="color: #05b245;" ><i class="fa-solid fa-arrow-trend-up text-xs"></i> +12% este mês</p>
+            </div>
+            <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex justify-between">
+                    <p class="title">Conta Maria</p>
+                    <i class="fa-regular fa-money-bill-1 text-xs rounded-full flex justify-center items-center w-8 h-8 text-pink-400 bg-gradient-to-br from-pink-200 to-pink-100"></i>                
+                </div>                
+                <p class="text-2xl mt-3 title">R$</p>
+                <p class="text-gray-600">Itaú Conta Corrente</p>
+                <p class="mt-4" style="color: #05b245;" ><i class="fa-solid fa-arrow-trend-up text-xs"></i> +5% este mês</p>
+            </div>
+            <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex justify-between">
+                    <p class="title">Conta João</p>
+                    <i class="fa-regular fa-money-bill-1 text-xs rounded-full flex justify-center items-center w-8 h-8  text-blue-400 bg-gradient-to-br from-blue-200 to-blue-100"></i>                
+                </div>                
+                <p class="text-2xl mt-3 title">R$</p>
+                <p class="text-gray-600">Bradesco Conta Corrente</p>
+                <p class="mt-4" style="color: #ef4744;"><i class="fa-solid fa-arrow-trend-down text-xs"></i> -3% este mês</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 mt-3">
+            <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex justify-between mb-6">
+                    <p class="title">Gastos do Mês</p>
+                    <p class="text-gray-600">Julho 2025</p>    
+                </div>
+                <ul class="flex flex-col space-y-4">
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 text-center items-center">
+                                <div class="w-4 h-4 rounded-full bg-amber-200"></div>
+                                <p class="text-gray-700">Moradia</p>
+                            </div>
+                            <p>R$ 1.000</p>
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 text-center items-center">
+                                <div class="w-4 h-4 rounded-full bg-amber-200"></div>
+                                <p class="text-gray-700">Alimentação</p>
+                            </div>
+                            <p>R$ 1.000</p>
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 text-center items-center">
+                                <div class="w-4 h-4 rounded-full bg-amber-200"></div>
+                                <p class="text-gray-700">Transporte</p>
+                            </div>
+                            <p>R$ 1.000</p>
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 text-center items-center">
+                                <div class="w-4 h-4 rounded-full bg-amber-200"></div>
+                                <p class="text-gray-700">Lazer</p>
+                            </div>
+                            <p>R$ 1.000</p>
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex gap-2 text-center items-center">
+                                <div class="w-4 h-4 rounded-full bg-amber-200"></div>
+                                <p class="text-gray-700">Outros</p>
+                            </div>
+                            <p>R$ 1.000</p>
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+               <div class="flex justify-between mb-6">
+                    <p class="title">Metas em Andamento</p>
+                    <a href="meta.html" class=" text-yellow-600">Ver todas</a>    
+                </div>
+                <ul class="flex flex-col space-y-6">
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex justify-center items-center gap-3">
+                                <i class="fa-regular fa-building text-xs rounded-full flex justify-center items-center w-8 h-8 text-pink-400 bg-pink-100"></i>   
+                                <div>
+                                    <p class="text-gray-700 title">Imovel Proprio</p>
+                                    <p class="text-gray-700 text-xs">Meta para 2026</p>
+                                </div>             
+                            </div>
+                            <div class="text-end mb-2">
+                                <p>R$ 85.000</p>
+                                <p class="text-gray-700 text-xs">de R$ 250.000</p>
+                            </div>                        
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>                    
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex justify-center items-center gap-3">
+                                <i class="fa-regular fa-folder text-xs rounded-full flex justify-center items-center w-8 h-8 text-blue-400 bg-blue-100"></i>   
+                                <div>
+                                    <p class="text-gray-700 title">Fundo de Emergência</p>
+                                    <p class="text-gray-700 text-xs">Meta para 2026</p>
+                                </div>             
+                            </div>
+                            <div class="text-end mb-2">
+                                <p>R$ 85.000</p>
+                                <p class="text-gray-700 text-xs">de R$ 250.000</p>
+                            </div>                        
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>                    
+                    <li>
+                        <div class="flex justify-between">
+                            <div class="flex justify-center items-center gap-3">
+                                <i class="fa-solid fa-earth-americas text-xs rounded-full flex justify-center items-center w-8 h-8 text-purple-400 bg-purple-100"></i>   
+                                <div>
+                                    <p class="text-gray-700 title">Viagem Europa</p>
+                                    <p class="text-gray-700 text-xs">Meta para 2026</p>
+                                </div>             
+                            </div>
+                            <div class="text-end mb-2">
+                                <p>R$ 85.000</p>
+                                <p class="text-gray-700 text-xs">de R$ 250.000</p>
+                            </div>                        
+                        </div>
+                        <div class="w-full h-2.5 rounded-xl mt-1 bg-amber-200"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+                <div class="flex justify-between mb-6">
+                    <p class="title">Transações Recentes</p>
+                    <a href="meta.html" class=" text-yellow-600">Ver todas</a>    
+                </div>
+                <div class="w-full">
+                    <table class="w-full table-auto border-collapse">
+                        <thead >
+                            <tr class="text-sm text-gray-500 text-left">
+                            <th class="px-4 py-2">Descrição</th>
+                            <th class="px-4 py-2">Categoria</th>
+                            <th class="px-4 py-2">Data</th>
+                            <th class="px-4 py-2">Valor</th>
+                            <th class="px-4 py-2">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-300 text-sm text-gray-700">
+                            <tr>
+                            <td class="px-4 py-4 flex items-center gap-2">
+                                <i class="fa-regular fa-rectangle-list text-xs rounded-full flex justify-center items-center w-8 h-8 text-pink-500 bg-pink-100"></i>
+                                Supermercado Pão de Açúcar
+                            </td>                            
+                            <td class="px-4 py-4 text-gray-600">Alimentação</td>
+                            <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                            <td class="px-4 py-4 text-red-500 font-bold">– R$ 385,42</td>
+                            <td class="px-4 py-4">
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                            </td>
+                            </tr>                            
+                            <tr>
+                            <td class="px-4 py-4 flex items-center gap-3">
+                                <i class="fa-regular fa-building text-xs rounded-full flex justify-center items-center w-8 h-8 text-purple-500 bg-purple-100"></i>   
+                                Aluguel Apartamento
+                            </td>                            
+                            <td class="px-4 py-4 text-gray-600">Moradia</td>
+                            <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                            <td class="px-4 py-4 text-red-500 font-bold">– R$ 2.500,00</td>
+                            <td class="px-4 py-4">
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                            </td>
+                            </tr>                            
+                            <tr>
+                            <td class="px-4 py-4 flex items-center gap-2">
+                                <i class="fa-solid fa-coins text-xs rounded-full flex justify-center items-center w-8 h-8 text-amber-500 bg-amber-100"></i>                                
+                                Salário Thiciane
+                            </td>                            
+                            <td class="px-4 py-4 text-gray-600">Receita</td>
+                            <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                            <td class="px-4 py-4 text-green-500 font-bold">+ R$ 6.800,00</td>
+                            <td class="px-4 py-4">
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                            </td>
+                            </tr>                            
+                            <tr>
+                            <td class="px-4 py-4 flex items-center gap-2">
+                                <i class="fa-regular fa-circle-check text-xs rounded-full flex justify-center items-center w-8 h-8 text-blue-500 bg-blue-100"></i>
+                                Seguro Saúde
+                            </td>                            
+                            <td class="px-4 py-4 text-gray-600">Saúde</td>
+                            <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                            <td class="px-4 py-4 text-red-500 font-bold">– R$ 850,00</td>
+                            <td class="px-4 py-4">
+                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                            </td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

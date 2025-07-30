@@ -3,7 +3,7 @@
   <li>
      <a href="{{ url(href) }}"
         class="flex items-center py-3 px-6 group          
-              {{ 'border-b-2 border-b-yellow-600 text-gray-900' if is_active else 'text-gray-600 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700' }}">
+              {{ 'border-b-2 border-b-yellow-600 dark:text-white text-gray-900' if is_active else 'text-gray-600 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700' }}">
 
         <i class="{{class}} text-lg w-5 text-center"></i>
         <span class="ms-3">{{label}}</span>
@@ -25,7 +25,7 @@
   </span>
 
   <div class=" h-full overflow-y-auto bg-white dark:bg-gray-800 inline ">
-    <p class="py-4 px-4">menu</p>
+    <p class="py-4 px-4 text-gray-600">menu</p>
     <ul class="font-medium">
       {{item(href='dashboard', label='Dashboard', class="fa-regular fa-building", active_path=request.path)}}
       {{item(href='contas', label='Contas', class="fa-regular fa-folder-closed", active_path=request.path)}}
