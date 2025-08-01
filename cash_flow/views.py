@@ -27,32 +27,32 @@ def login(request: HttpRequest):
 
 @view(path='dashboard', name='dashboard')
 def dashboard(request: HttpRequest):
-    return render(request, 'contents/dashboard.html.j2')
+    return render(request, 'contents/dashboard.html.j2', {'title':'Dashboard'})
 
 @view(path='contas', name='contas')
 def contas(request: HttpRequest):
-    return render(request, 'contents/contas.html.j2')
+    return render(request, 'contents/contas.html.j2', {'title': 'Contas'})
 
 @view(path='transacoes', name='transacoes')
 def transacoes(request: HttpRequest):
-    return render(request, 'contents/transacoes.html.j2')
+    return render(request, 'contents/transacoes.html.j2', {'title': 'Transações'})
 
 @view(path='metas', name='metas')
 def metas(request: HttpRequest):
-    return render(request, 'contents/metas.html.j2')
+    return render(request, 'contents/metas.html.j2', {'title': 'Metas'})
 
 @view(path='relatorios', name='relatorios')
 def relatorios(request: HttpRequest):
-    return render(request, 'contents/relatorios.html.j2')
+    return render(request, 'contents/relatorios.html.j2', {'title': 'Relatórios'})
 
 @view(path='investimentos', name='investimentos')
 def investimentos(request: HttpRequest):
-    return render(request, 'contents/investimentos.html.j2')
+    return render(request, 'contents/investimentos.html.j2', {'title': 'Investimentos'})
 
 @view(path='alertas', name='alertas')
 def alertas(request: HttpRequest):
-    return render(request, 'contents/alertas.html.j2')
+    return render(request, 'contents/alertas.html.j2', {'title': 'Alertas'})
 
 @view(path='configuracoes', name='configuracoes')
 def configuracoes(request: HttpRequest):
-    return render(request, 'contents/configuracoes.html.j2')
+    return render(request, 'contents/configuracoes.html.j2', {'title': 'Configurações'})

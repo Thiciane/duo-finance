@@ -1,6 +1,14 @@
 {% extends "base.html.j2" %}
 
+{% block sub_nav %}
+    <div class="mx-2 mt-4 flex justify-end">
+        <button class="py-1 px-3 rounded-md text-white bg-yellow-600 flex gap-1 justify-center items-center dark:text-gray-600 hover:bg-yellow-500 dark:hover:bg-gray-700">
+        <i class="fa-solid fa-plus text-xs"></i>
+        Nova Transação</button>
+    </div>
+{% endblock %}
 {% block body %}
+
     <div class="mt-4"> 
         <div class="grid grid-cols-3 gap-3">
             <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">

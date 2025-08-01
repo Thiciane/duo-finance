@@ -1,5 +1,76 @@
 {% extends "base.html.j2" %}
 
 {% block body %}
-<h1>transacoes</h1>
+<div class="mt-4">
+    <div class="mt-5">
+        <div class="bg-white rounded-xl m-2 p-6 shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <div class="mb-6">
+                <p class="title">Transações Recentes</p>
+            </div>
+            <div class="w-full">
+                <table class="w-full table-auto border-collapse">
+                    <thead >
+                        <tr class="text-sm text-gray-500 text-left">
+                        <th class="px-4 py-2">Descrição</th>
+                        <th class="px-4 py-2">Categoria</th>
+                        <th class="px-4 py-2">Data</th>
+                        <th class="px-4 py-2">Valor</th>
+                        <th class="px-4 py-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-300 text-sm text-gray-700">
+                        <tr>
+                        <td class="px-4 py-4 flex items-center gap-2">
+                            <i class="fa-regular fa-rectangle-list text-xs rounded-full flex justify-center items-center w-8 h-8 text-pink-500 bg-pink-100"></i>
+                            Supermercado Pão de Açúcar
+                        </td>                            
+                        <td class="px-4 py-4 text-gray-600">Alimentação</td>
+                        <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                        <td class="px-4 py-4 text-red-500 font-bold">– R$ 385,42</td>
+                        <td class="px-4 py-4">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                        </td>
+                        </tr>                            
+                        <tr>
+                        <td class="px-4 py-4 flex items-center gap-3">
+                            <i class="fa-regular fa-building text-xs rounded-full flex justify-center items-center w-8 h-8 text-purple-500 bg-purple-100"></i>   
+                            Aluguel Apartamento
+                        </td>                            
+                        <td class="px-4 py-4 text-gray-600">Moradia</td>
+                        <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                        <td class="px-4 py-4 text-red-500 font-bold">– R$ 2.500,00</td>
+                        <td class="px-4 py-4">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                        </td>
+                        </tr>                            
+                        <tr>
+                        <td class="px-4 py-4 flex items-center gap-2">
+                            <i class="fa-solid fa-coins text-xs rounded-full flex justify-center items-center w-8 h-8 text-amber-500 bg-amber-100"></i>                                
+                            Salário Thiciane
+                        </td>                            
+                        <td class="px-4 py-4 text-gray-600">Receita</td>
+                        <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                        <td class="px-4 py-4 text-green-500 font-bold">+ R$ 6.800,00</td>
+                        <td class="px-4 py-4">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                        </td>
+                        </tr>                            
+                        <tr>
+                        <td class="px-4 py-4 flex items-center gap-2">
+                            <i class="fa-regular fa-circle-check text-xs rounded-full flex justify-center items-center w-8 h-8 text-blue-500 bg-blue-100"></i>
+                            Seguro Saúde
+                        </td>                            
+                        <td class="px-4 py-4 text-gray-600">Saúde</td>
+                        <td class="px-4 py-4 text-gray-600">15 Jul 2023</td>
+                        <td class="px-4 py-4 text-red-500 font-bold">– R$ 850,00</td>
+                        <td class="px-4 py-4">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Concluída</span>
+                        </td>
+                        </tr>                            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
